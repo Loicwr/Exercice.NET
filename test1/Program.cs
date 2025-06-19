@@ -249,9 +249,9 @@ else
 
 
 /*Exercide 17 
-    Demander à l'utilisateur un nom d'utilisateur et un mot de passe, et vérifier si les deux sont corrects.*//*
+    Demander à l'utilisateur un nom d'utilisateur et un mot de passe, et vérifier si les deux sont corrects.*/
 
-string utilisateur = "Admin";
+/*string utilisateur = "Admin";
 string motDePasse = "Password";
 
 Console.WriteLine("Nom utilisateur : ");
@@ -260,21 +260,89 @@ string saissieNomUtilisateur = Console.ReadLine();
 Console.WriteLine("Mot de passe utilisateur : ");
 string saissieMdpUtilisateur = Console.ReadLine();
 
-if ( utilisateur == saissieNomUtilisateur && motDePasse == saissieMdpUtilisateur)
+if (utilisateur == saissieNomUtilisateur && motDePasse == saissieMdpUtilisateur)
 {
     Console.WriteLine("Bienvenue " + utilisateur);
 }
 else
 {
     Console.WriteLine("Nom d'utilisateur ou le mot de passe est arroné");
-}*/
-
+}
+;
+*/
 
 /*Exercice 18 
     Écrire un programme qui affiche "Excellent" si la note est supérieure à 85, "Bien" si elle est entre 70 et 85, sinon afficher "Peut mieux faire".*//*
 
 int noteExamen = 96;
 
-if (noteExamen < )*/
+if (noteExamen < 70)
+{
+    Console.WriteLine("Peut mieux faire.");
+}
+else if (noteExamen > 85)
+{
+    Console.WriteLine("Excellent.");
+}
+else
+{
+    Console.WriteLine("Bien.");
+};*/
 
 
+/*Exercice 19
+    Créer un programme qui vérifie si une chaîne de caractères est un palindrome.*/
+
+
+/*Exercice 20
+    Écrire un programme qui vérifie si un nombre est à la fois positif, pair et supérieur à 100.*/
+
+/*Console.WriteLine("Donne moi un nombre ?");
+int nombrePositifPairSuperieur = Convert.ToInt32(Console.ReadLine());
+
+if (nombrePositifPairSuperieur > 0 && nombrePositifPairSuperieur % 2 == 0 && nombrePositifPairSuperieur > 100)
+{
+    Console.WriteLine(nombrePositifPairSuperieur + " est positif, pair et supérieur à 100.");
+}
+else
+{
+    Console.WriteLine(nombrePositifPairSuperieur + " ne respecte pas l'une de ses conditions : positif, pair ou supérieur à 100");
+};
+*/
+
+
+//3.Boucles simples
+
+
+/*Exercice 21
+    Afficher les nombres de 1 à 10 avec une boucle `for`.*/
+
+
+/*for (int i = 1; i <= 10; i++)
+{
+    Console.WriteLine(i);
+};*/
+
+
+/*Exercice 22
+    Afficher les nombres pairs entre 1 et 20.*/
+
+/*for (int i = 1; i <= 20; i++)
+{
+    if (i % 2 == 0)
+    {
+        Console.WriteLine(i);
+    }
+};*/
+
+
+/*Exercice 23
+    Utiliser une boucle pour afficher chaque élément d'un tableau.*/
+
+/*string[] tableau = ["Loïc", "Hazel", "Emerick"];
+
+for (int i = 0; i < tableau.Length; i++)
+{
+    Console.WriteLine(tableau[i]);
+};
+*/
