@@ -212,11 +212,11 @@ else if (positifMultiple < 0)
 else
 {
     Console.WriteLine(positifMultiple + " n'est pas un multiple de 5");
-}*/
+};*/
 
 
 /*Exercice 15
-    Écrire un programme qui vérifie si une chaîne de caractères contient la lettre 'a'.*/
+    Écrire un programme qui vérifie si une chaîne de caractères contient la lettre 'a'.*//*
 
 string chaineCaract = "J'aime la saucisse";
 string LettreA = "a";
@@ -228,6 +228,53 @@ if (chaineCaract.Contains('a'))
 else
 {
     Console.WriteLine("La chaîne de caratères ne contient pas la lettre : " + LettreA);
+};
+*/
+
+
+/*Exercice 16
+    Vérifier si un nombre est divisible à la fois par 2 et par 3, mais pas par 9.*//*
+
+Console.WriteLine("Donner moi un nombre pour vérifier si il est divisible à la fois par 2 et 3 , mais pas par 9");
+int divisibleDeuxouTrois = Convert.ToInt32(Console.ReadLine());
+
+if (divisibleDeuxouTrois % 2 == 0 && divisibleDeuxouTrois % 3 == 0 && divisibleDeuxouTrois % 9 != 0)
+{
+    Console.WriteLine(divisibleDeuxouTrois + " est bien divisible à la fois par 2 et 3 , mais pas par 9");
 }
+else
+{
+    Console.WriteLine(divisibleDeuxouTrois + " ne respecte pas les conditions");
+};*/
+
+
+/*Exercide 17 
+    Demander à l'utilisateur un nom d'utilisateur et un mot de passe, et vérifier si les deux sont corrects.*//*
+
+string utilisateur = "Admin";
+string motDePasse = "Password";
+
+Console.WriteLine("Nom utilisateur : ");
+string saissieNomUtilisateur = Console.ReadLine();
+
+Console.WriteLine("Mot de passe utilisateur : ");
+string saissieMdpUtilisateur = Console.ReadLine();
+
+if ( utilisateur == saissieNomUtilisateur && motDePasse == saissieMdpUtilisateur)
+{
+    Console.WriteLine("Bienvenue " + utilisateur);
+}
+else
+{
+    Console.WriteLine("Nom d'utilisateur ou le mot de passe est arroné");
+}*/
+
+
+/*Exercice 18 
+    Écrire un programme qui affiche "Excellent" si la note est supérieure à 85, "Bien" si elle est entre 70 et 85, sinon afficher "Peut mieux faire".*//*
+
+int noteExamen = 96;
+
+if (noteExamen < )*/
 
 
