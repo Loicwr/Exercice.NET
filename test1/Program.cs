@@ -327,6 +327,7 @@ else
 /*Exercice 22
     Afficher les nombres pairs entre 1 et 20.*/
 
+
 /*for (int i = 1; i <= 20; i++)
 {
     if (i % 2 == 0)
@@ -339,6 +340,7 @@ else
 /*Exercice 23
     Utiliser une boucle pour afficher chaque élément d'un tableau.*/
 
+
 /*string[] tableau = ["Loïc", "Hazel", "Emerick"];
 
 for (int i = 0; i < tableau.Length; i++)
@@ -346,3 +348,16 @@ for (int i = 0; i < tableau.Length; i++)
     Console.WriteLine(tableau[i]);
 };
 */
+
+
+/*Exercice 24
+    Demander à l'utilisateur un nombre de 1 à 10 et afficher la table de multiplication.*/
+
+
+/*Console.WriteLine("Donne-moi un nombre entre 1 et 10 et j'afficherai la table de multiplication de ce nombre : ");
+int tableMultiplication = Convert.ToInt32(Console.ReadLine());
+
+for (int i = 1; i <= 10; i++)
+{
+    Console.WriteLine(i * tableMultiplication);
+};*/
