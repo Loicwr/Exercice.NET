@@ -36,6 +36,7 @@ else
     Console.WriteLine("Nul");
 };*/
 
+
 /*Exercice 3
     Créer un programme qui affiche "Vous êtes mineur" si l’âge est inférieur à 18.*/
 
@@ -49,6 +50,7 @@ else
 {
     Console.WriteLine("Vous êtes mineur");
 };*/
+
 
 /*Exercice 4
     Écrire un programme qui vérifie si une chaîne de caractères est vide ou non.*/
@@ -64,6 +66,7 @@ else
     Console.WriteLine("La chaîne de caractères n'est pas vide !");
 };*/
 
+
 /*Exercice 5
     Vérifier si un nombre est pair ou impair.*/
 /*
@@ -76,8 +79,9 @@ if (nombrePairImpair % 2 != 0)
 else
 {
     Console.WriteLine("Ton nombre est pair !");
-};
-*/
+};*/
+
+
 /*Exercice 6
      Écrire un programme qui compare deux nombres et affiche le plus grand.*/
 /*
@@ -92,6 +96,7 @@ else
 {
     Console.WriteLine("Ma variable nombre2 est la plus grande : " + nombre2);
 };*/
+
 
 /*Exercice 7
     Vérifier si un nombre est divisible par 3 ou par 5*/
@@ -110,6 +115,7 @@ else
 {
     Console.WriteLine(nombreDivisible + "n'est pas divisble par 3 ou 5");
 };*/
+
 
 /*Exercice 8
     Demander à l'utilisateur un mot de passe et vérifier s'il correspond à "admin".*/
@@ -131,6 +137,8 @@ else
 
 */
 
+
+
 /*2. Condition imbriquées*/
 
 /*Exercice 11
@@ -147,6 +155,7 @@ else
 {
     Console.WriteLine(nombreCompris + " ne se trouve pas entre 10 et 20");
 };*/
+
 
 /*Exercice 12
     Demander à l'utilisateur un âge et afficher s'il est un enfant (moins de 12 ans), 
@@ -168,17 +177,23 @@ else
     Console.WriteLine("Vous êtes un adolescent");
 };
 */
-/*Exercice 13
-     Créer un programme qui vérifie si une année est bissextile ou non.*/
 
-/*Console.WriteLine("Donne-moi une année et je te dis si elle est bissextile");
+
+/*Exercice 13
+     Créer un programme qui vérifie si une année est bissextile ou non.*//*
+
+Console.WriteLine("Donne-moi une année et je te dis si elle est bissextile");
 int anneeBis = Convert.ToInt32(Console.ReadLine());
 
-if (anneeBis % 4 == 0 )
+if ((anneeBis % 4 == 0 && anneeBis % 100 != 0) || (anneeBis % 400 == 0))
 {
-    Console.WriteLine("");
+    Console.WriteLine(anneeBis + " est une année bissextile");
 }
-*/
+else
+{
+    Console.WriteLine(anneeBis + " n'est pas une année bissestile");
+};*/
+
 
 /*Exercice 14
     Vérifier si un nombre est positif et multiple de 5.*/
@@ -199,5 +214,20 @@ else
     Console.WriteLine(positifMultiple + " n'est pas un multiple de 5");
 }*/
 
+
 /*Exercice 15
     Écrire un programme qui vérifie si une chaîne de caractères contient la lettre 'a'.*/
+
+string chaineCaract = "J'aime la saucisse";
+string LettreA = "a";
+
+if (chaineCaract.Contains('a'))
+{
+    Console.WriteLine("La chaîne de caractères contient bien la lettre : " + LettreA);
+}
+else
+{
+    Console.WriteLine("La chaîne de caratères ne contient pas la lettre : " + LettreA);
+}
+
+
