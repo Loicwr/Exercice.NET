@@ -401,7 +401,7 @@ else
 /*Exercice 19
     Créer un programme qui vérifie si une chaîne de caractères est un palindrome.*/
 
-Console.WriteLine("Entre un mot et voyons si c'est un palindrome :");
+/*Console.WriteLine("Entre un mot et voyons si c'est un palindrome :");
 string entrerUtilisateur = Console.ReadLine();
 string palindrome = new string(entrerUtilisateur.Reverse().ToArray());
 
@@ -412,7 +412,7 @@ if (entrerUtilisateur == palindrome)
 else
 {
     Console.WriteLine($"{entrerUtilisateur} n'est pas un palindrome");
-}
+}*/
 
     
 
