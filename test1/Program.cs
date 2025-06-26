@@ -244,6 +244,19 @@ else
     Calculer le nombre de caractères dans une chaîne de caractères, si le nombre de caractères est supérieur à 5, ne garder que les 5 premiers caractères.*/
 
 
+/*Console.WriteLine("Donne moi un mot : ");
+string chaineCaractere = Console.ReadLine();
+
+if (chaineCaractere.Length > 5)
+{
+    Console.WriteLine(chaineCaractere.Substring(0, 5));
+}
+else
+{
+    Console.WriteLine($"{chaineCaractere} ne contient pas au moins 5 caractères");
+}*/
+
+
 
 
 
