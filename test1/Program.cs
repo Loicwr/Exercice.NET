@@ -1,5 +1,87 @@
 ﻿using System.Diagnostics;
 
+//Exercice brief 
+
+//Exercice 5
+
+
+/*int note;
+
+
+for (int i = 1; i <= 5; i++)
+{
+    Console.WriteLine("Merci de saisir la note" + i + "(sur /20) : ");
+
+}*/
+
+
+
+//Exercice 6
+// initialisation des chiffres aléatoires et d'une variable
+Random aleatoire = new Random();
+int nbMystere = aleatoire.Next(1, 51);
+Console.WriteLine(nbMystere);
+
+Console.WriteLine(" --- Trouver le nombre mystère --- ");
+//Initialisation des variables 
+int nombreDeFois = 0;
+int saissieUtilisateur = 0;
+// initialisation d'une boucle (saissieUtilisateur n'est pas égal à nbMystere)
+while (saissieUtilisateur != nbMystere)
+{
+    Console.Write("Veuillez saisir un nombre : ");
+    saissieUtilisateur = Convert.ToInt32(Console.ReadLine());
+
+    // si saissieUtilisateur est supérieur à nbMystere
+    if (saissieUtilisateur > nbMystere)
+    {
+        // ajoute de couleurs du fonds et des lignes
+        Console.BackgroundColor = ConsoleColor.Red;
+        Console.ForegroundColor = ConsoleColor.Yellow;
+        Console.WriteLine("Le nombre mystère est plus petit");
+        Console.ResetColor();
+    } // si saissieUtilisateur est inférieur à nbMystere
+    else if (saissieUtilisateur < nbMystere)
+    {// ajoute de couleurs du fonds et des lignes
+        Console.BackgroundColor = ConsoleColor.Red;
+        Console.ForegroundColor = ConsoleColor.Yellow;
+        Console.WriteLine("Le nombre mystère est plus grand");
+        Console.ResetColor();
+    }
+    else // Si l'utilisateur trouve le nombre
+    {// ajoute de couleurs du fonds et des lignes
+        Console.BackgroundColor = ConsoleColor.Green;
+        Console.ForegroundColor = ConsoleColor.Yellow;
+        Console.WriteLine("Bravo !!!! Vous avez trouvé le bon nombre mystère !");
+        Console.ResetColor();
+    }
+    // incrémentation des coups
+    nombreDeFois++;
+    
+
+
+};
+Console.BackgroundColor = ConsoleColor.Yellow;
+Console.ForegroundColor = ConsoleColor.Green;
+Console.WriteLine("Vous avez trouvé en " + nombreDeFois++ + " coups"); // nombre de coups
+Console.ResetColor();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*1. Condition simples*/
 
 
@@ -360,4 +442,51 @@ int tableMultiplication = Convert.ToInt32(Console.ReadLine());
 for (int i = 1; i <= 10; i++)
 {
     Console.WriteLine(i * tableMultiplication);
+}
+;*/
+
+
+/*Exercice 25
+    Afficher les éléments d'une chaîne de caractères un par un.*/
+
+
+/*Console.WriteLine(" donner moi une chaîne de caractères");
+string chaineCaractere = Console.ReadLine();
+string[] separationCaractere = chaineCaractere.Split(' ');
+
+for (int i = 0; i < separationCaractere.Length; i++)
+{
+    Console.WriteLine(separationCaractere[i]);
 };*/
+
+
+
+//4. Boucles `while`
+
+
+/*Exercice 31
+     Utiliser une boucle `while` pour afficher les nombres de 1 à 10.*/
+
+
+/*int nombreUnDix = 0;
+
+while(nombreUnDix < 10)
+{
+    nombreUnDix++;
+    Console.WriteLine(nombreUnDix);
+};
+
+*/
+
+
+/*Exercice 32
+    Utiliser une boucle `while` pour calculer la somme des nombres de 1 à 100.*/
+
+
+//5.Utilisation des boucles avec `break` et `continue`
+
+
+/*Exercice 41
+    Utiliser une boucle pour afficher les nombres de 1 à 20, mais arrêter dès que vous atteignez 10.*/
+
+
