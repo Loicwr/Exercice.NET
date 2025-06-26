@@ -427,7 +427,7 @@ else
     Console.WriteLine($"{entrerUtilisateur} n'est pas un palindrome");
 }*/
 
-    
+
 
 /*Exercice 20
     Écrire un programme qui vérifie si un nombre est à la fois positif, pair et supérieur à 100.*/
@@ -513,6 +513,54 @@ for (int i = 0; i < separationCaractere.Length; i++)
 };*/
 
 
+// Exercice 26
+//Utiliser une boucle pour afficher les nombres de 0 à 100 avec un pas de 10.
+
+/*int nombres10 = 10;
+
+for (int i = 1; i <= 10; i++)
+{
+    Console.WriteLine(i * nombres10 );
+}
+*/
+
+
+//Exercice 27
+//Afficher les éléments d'une liste avec leurs indices.
+
+
+/*List<string> prenoms = new List<string>() { "Hazel", "Loïc", "Julien" };
+string[] list = prenoms.ToArray();
+Console.WriteLine(string.Join("-", prenoms));
+Console.WriteLine(string.Join(" ", list));
+
+for (int i = 0; i < list.Length; i++)
+{
+    Console.WriteLine($"Ma liste se compose de : {i + 1}. {list[i]}");
+}
+
+*/
+
+//Exercice 28
+//Afficher les nombres de 10 à 1 en ordre décroissant avec une boucle.
+
+
+/*for(int i = 10; i > 0; i--)
+{
+    Console.WriteLine(i);
+};*/
+
+
+//Exercice 29
+     //Créer une boucle qui calcule la somme des nombres de 1 à 50.
+
+
+for(int i = 0; i < 50; i++)
+{
+
+}
+
+
 
 //4. Boucles `while`
 
@@ -543,3 +591,21 @@ while(nombreUnDix < 10)
     Utiliser une boucle pour afficher les nombres de 1 à 20, mais arrêter dès que vous atteignez 10.*/
 
 
+/*// Exo 76
+int n = 496;
+int sum = 0;
+
+for (int i = n - 1; i > 0; i--)
+{
+    if (n % i == 0)
+    {
+        Console.WriteLine(i);
+        sum += i;
+    }
+
+}
+if (sum == n)
+    Console.WriteLine("C'est un nombre parfait");
+else
+    Console.WriteLine("Ce n'est pas un nombre parfait");
+*/
