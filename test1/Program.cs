@@ -1,4 +1,6 @@
-﻿using System.Diagnostics;
+﻿using System.ComponentModel;
+using System.Diagnostics;
+using System.Runtime.ConstrainedExecution;
 
 //Exercice brief 
 
@@ -16,7 +18,7 @@ for (int i = 1; i <= 5; i++)
 
 
 
-//Exercice 6
+/*//Exercice 6
 // initialisation des chiffres aléatoires et d'une variable
 Random aleatoire = new Random();
 int nbMystere = aleatoire.Next(1, 51);
@@ -64,7 +66,7 @@ while (saissieUtilisateur != nbMystere)
 Console.BackgroundColor = ConsoleColor.Yellow;
 Console.ForegroundColor = ConsoleColor.Green;
 Console.WriteLine("Vous avez trouvé en " + nombreDeFois++ + " coups"); // nombre de coups
-Console.ResetColor();
+Console.ResetColor();*/
 
 
 
@@ -218,6 +220,30 @@ else
 
 
 */
+
+
+
+//Exercice 9
+//Créer un programme qui vérifie si une lettre est une voyelle ou une consonne.
+
+/*Console.WriteLine("entre une lettre : ");
+string ConsonneOuVoyelle = Console.ReadLine();
+
+if (ConsonneOuVoyelle == "a" || ConsonneOuVoyelle == "e" || ConsonneOuVoyelle == "i" || ConsonneOuVoyelle == "o" || ConsonneOuVoyelle == "u" || ConsonneOuVoyelle == "y" )
+{
+    Console.WriteLine($"{ConsonneOuVoyelle} est une voyelle");
+}
+else
+{
+    Console.WriteLine($"{ConsonneOuVoyelle} est une consonne");
+}
+*/
+
+
+/*Exercice 10
+    Calculer le nombre de caractères dans une chaîne de caractères, si le nombre de caractères est supérieur à 5, ne garder que les 5 premiers caractères.*/
+
+
 
 
 
@@ -375,6 +401,20 @@ else
 /*Exercice 19
     Créer un programme qui vérifie si une chaîne de caractères est un palindrome.*/
 
+Console.WriteLine("Entre un mot et voyons si c'est un palindrome :");
+string entrerUtilisateur = Console.ReadLine();
+string palindrome = new string(entrerUtilisateur.Reverse().ToArray());
+
+if (entrerUtilisateur == palindrome)
+{
+    Console.WriteLine($"{entrerUtilisateur} est une palindrome");
+}
+else
+{
+    Console.WriteLine($"{entrerUtilisateur} n'est pas un palindrome");
+}
+
+    
 
 /*Exercice 20
     Écrire un programme qui vérifie si un nombre est à la fois positif, pair et supérieur à 100.*/
